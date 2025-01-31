@@ -12,6 +12,7 @@ import Account from "./routes/Account.jsx";
 import fetcher from "./fetcher.js";
 import Category from "./routes/Category.jsx";
 import Product from "./routes/Product.jsx";
+import SignUp from "./routes/SignUp.jsx";
 
 axios.defaults.baseURL = "https://fakestoreapi.com";
 
@@ -27,6 +28,7 @@ createRoot(document.getElementById("root")).render(
               <Route path="/categories/:category" element={<Category />} />
               <Route path="/account" element={<Account />} />
               <Route path="/products/:productId" element={<Product />} />
+              <Route path="/signup" element={<SignUp />} />
             </Route>
           </Routes>
         </BrowserRouter>
